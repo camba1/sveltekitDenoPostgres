@@ -1,0 +1,21 @@
+services:
+  frontend:
+    build:
+      context: ./svelte
+    ports:
+    - "3000:3000"
+  backend:
+    build:
+      context: ./deno
+    ports:
+    - "4242:4242"
+  DB:
+    image: postgres
+    restart: always
+    container_name: nodepostgres
+    environment:
+      - POSTGRES_PASSWORD=TestDB@home2
+    volumes:
+      - ./postgresDB/data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"

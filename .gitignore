@@ -1,0 +1,3 @@
+svelte/node_modules/
+postgresDB/data/
+.DS_Store
