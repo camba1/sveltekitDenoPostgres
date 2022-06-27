@@ -1,4 +1,4 @@
-### Sample Svelte, Deno, PostegresDB application
+### Sample Svelte, Deno, PostgresDB application
 
 This WIP repo contains a sample application that uses a Sveltekit based frontend,
 a deno backend and a PotsgresDB database
