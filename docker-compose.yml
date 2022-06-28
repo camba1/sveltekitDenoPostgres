@@ -7,6 +7,8 @@ services:
   backend:
     build:
       context: ./deno
+    environment:
+      - DATABASE_URL=postgres://postgres:TestDB@home2@DB:5432/postgres
     ports:
     - "4242:4242"
   DB:
